@@ -23,6 +23,7 @@ import "./interfaces/IXFlashTokenUsage.sol";
  *
  * This transfer from the pending slot to the distribution slot is based on cycleDividendsPercent and CYCLE_PERIOD_SECONDS
  *
+ *
  */
 contract DividendsV2 is Ownable, ReentrancyGuard, IXFlashTokenUsage, IDividendsV2 {
     using SafeMath for uint256;
