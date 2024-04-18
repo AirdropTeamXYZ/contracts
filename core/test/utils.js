@@ -1,6 +1,6 @@
 async function signatureData(taskId, users, rewards, nonce, privateKey) {
     const { chainId } = await ethers.provider.getNetwork();
-    // 66 byte string, which represents 32 bytes of data
+    //   66 byte string, which represents 32 bytes of data
     let messageHash = encodeData(chainId, taskId, users, rewards, nonce);
 
     // 32 bytes of data in Uint8Array
