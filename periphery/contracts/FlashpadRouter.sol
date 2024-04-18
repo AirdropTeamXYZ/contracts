@@ -17,7 +17,7 @@ contract FlashpadRouter is IFlashpadRouter {
     address public immutable override WETH;
 
     modifier ensure(uint deadline) {
-        require(deadline >= block.timestamp, "FlashpadRouter: EXPIRED");
+        require(deadline >= block.timestamp, "FlashpadRouter:  EXPIRED");
         _;
     }
 
