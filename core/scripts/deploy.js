@@ -4,7 +4,7 @@ require("dotenv").config();
 const env = process.env;
 
 async function main() {
-    //* Get network */
+    //* Get network   */
     const accounts = await ethers.getSigners();
 
     console.log("==========================================================================");
